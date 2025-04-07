@@ -27,6 +27,10 @@ s.template = "cbi/tblsection"
 s.anonymous = true
 s.addremove = true
 
+o = s:option(Flag, "enable", translate("Enable"))
+o.default = 1
+o.rmempty = false
+
 -- Client MAC Address
 o = s:option(Value, "macaddr", translate("Client MAC"))
 o.rmempty = false
